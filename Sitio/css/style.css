@@ -1,0 +1,326 @@
+body{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.52;
+    color: #A87F41;
+    font-size: 20px;
+	font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    overflow-x: hidden; 
+
+}
+
+header{
+    width: 100%;
+    background: #FFB03B;
+    text-decoration: none;
+}
+
+.menu ul{
+margin: 0;
+list-style: none;
+padding: 0;
+display: flex; /*Caja flexible, los coloca en una fila*/
+justify-content: center;
+}
+
+.menu li:hover {
+    background: rgba( 0, 0, 0, 0.3);
+}
+.menu li{
+    border-right: 1px solid #fff; 
+
+}
+.menu li a {
+    display: block;
+    padding: 5px 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-widht: 768px) {
+    header label {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        background: #ffb03b;
+        width: 70%;
+        margin-left: -70%;
+    }
+    menu ul{
+        flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+}
+
+/*Estilo de lista*/
+ol, ul {
+
+list-style: none;
+    /*Formato de la pagina*/
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	
+	content: none;
+}
+
+#banner{
+    background: url(../img/Logo\ postreriaedit.jpg) ;
+    min-height: 650px;
+}
+
+/*Edición de formatos*/
+.header-h {
+    margin-top: 1px;
+    color: #FFB03B;
+    font-size: 30px;
+    font-family: 'Satisfy', sans-serif;
+    font-weight: 300;
+}
+/*Nosotros y galeria*/
+
+  img{
+      width: 95%;
+      height: 90;
+  }
+  .container-galeria{
+      padding: 2px;
+      display: flex;
+        
+  }
+  
+.columna{
+
+    margin:10px;
+    height: 150px;
+    width: 150px;
+    
+}
+
+
+
+
+
+/*Envios y Take Awey*/
+.msg-row {
+    margin-top: 56px;
+}
+.media-body, .media-left, .media-right {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.contact-icon {
+    color: #fff;
+    position: absolute;
+    left: 34px;
+    font-size: 32px;
+    margin-top: 18px;
+}
+.bg-1 {
+  
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.bg-14 {
+    
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.light-blue {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 1px;
+}
+/*Le da forma a la casilla de mensaje*/
+.contact-form {
+    margin: 0px 0 9px;
+    padding-bottom: 10px;
+}
+.contact-form textarea.form-control {
+    color: #000;
+    height: auto;
+}
+
+.contacts-btn {
+    background-color:  #FFB03B;
+    color: #ffffff ;
+    width: 170px;
+    height: 54px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+   text-transform: capitalize;
+    border: 0px;
+    }
+
+.validation {
+    color: red;
+    display:none;
+    margin: 0 0 20px;
+    font-weight:400;
+    font-size:13px;
+}
+
+#sendmessage {
+    color: green;
+    border:1px solid green;
+    display:none;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#errormessage {
+    color: red;
+    display:none;
+    border:1px solid red;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+#sendmessage.show, #errormessage.show, .show {
+    display:block;
+}
+
+/*Edición de los items del menú de postres*/
+#Container .mix{
+    display: none;
+}
+.menu-restaurant{
+    width: 50%;
+    float: left;
+    padding: 15px;
+    position: relative;
+}
+.menu-restaurant .menu-title {
+    float: left;
+    font-family: Montserrat,arial;
+    text-transform: uppercase;
+    font-size: 19px;
+    letter-spacing: normal;
+    color: #FFB03B;
+}
+.menu-restaurant .menu-line {
+    position: absolute;
+    bottom: 6px;
+    border-bottom: 1px dotted rgba(0,0,0,.3);
+    margin-left: .6rem;
+    margin-right: .6rem;
+}
+.menu-restaurant .menu-price {
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.menu-restaurant .menu-subtitle {
+    display: block;
+    float: left;
+    color: #111;
+    font-family: Satisfy,'Open Sans',arial;
+    font-size: 16px;
+}
+.menu-restaurant span.clearfix {
+    position: relative;
+    display: block;
+}
+.gallery-trigger ul li a.active, .gallery-trigger ul li a:hover {
+    background: #FFB03B;
+    color: #fff;
+    border: 1px solid #FFB03B;
+}
+.gallery-trigger ul li {
+    display: inline-block;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+.gallery-trigger ul li a {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #565656;
+    border-radius: 0px;
+    border: 1px solid #BBBBBB;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+    .content-holder h2 {
+        font-size: 23px;
+    }
+    .details-text p {
+        line-height: 16.6px;
+    }
+}
+@media (min-width: 451px) and (max-width: 767px) {
+    .details-text {
+        border:0px;
+        border-bottom: 2px solid #A87F41;
+    }
+}
+@media (min-width: 20px) and (max-width: 450px) {
+   
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/*Edición del footer*/
+footer{
+    
+    background: #000000;
+    height: auto;
+    font-family:sans-serif;
+    padding-top:40px;
+    color:rgb(255, 255, 255)
+    
+}
+.pedidosya{
+    margin-top: 10mm;
+    width: 60px;
+    margin-bottom: 5mm;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 17px;
+    font-family: Open sans-serif
+    
+}
+
+.footer-content h3{
+    font-size:1.8rem;
+    font-weight:400;
+    text-transform: capitalize;
+    line-height:3rem;
+    color:rgba(228, 137, 19, 0.815)
+}
+
+.footer-copyright{
+    font-size: 60%;
+    color: gray;
+    margin-top: 15mm;
+}
+    
+
+
+    
+    
+
